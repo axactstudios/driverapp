@@ -6,6 +6,8 @@ import 'package:driverapp/Screens/AllTrips/ThankYouScreen.dart';
 import 'package:driverapp/Screens/SplashScreen.dart';
 import 'package:driverapp/Screens/SupportScreen.dart';
 import 'package:driverapp/Screens/TermsCondition.dart';
+import 'package:driverapp/Screens/TripSummary/CompletedSummary.dart';
+import 'package:driverapp/Screens/TripSummary/Tripsummary.dart';
 import 'package:flutter/material.dart';
 import 'Screens/AccountSummary/AccountSummaryMain.dart';
 import 'Screens/AccountSummary/CommissionDue.dart';
@@ -30,8 +32,10 @@ class MyApp extends StatelessWidget {
         CommissionDue.routeName: (ctx) => CommissionDue(),
         SettlementDue.routeName: (ctx) => SettlementDue(),
         TransferScreen.routeName: (ctx) => TransferScreen(),
+        CompletedSummary.routeName: (ctx) => CompletedSummary(),
+        TripSummary.routeName: (ctx) => TripSummary(),
       },
-      home: TermsCondition(),
+      home: TripSummary(),
     );
   }
 }
